@@ -10,6 +10,10 @@ p {
   padding: 60px 20px 10px 20px;
 }
 
+h3 {
+  font-weight: bold;
+}
+
 /** HEADER **/
 #header-nav {
   background-color: rgb(113, 113, 113);
@@ -64,43 +68,28 @@ p {
   clear: both;
   margin-top: -30px;
 }
-
 #chicken {
-  padding-top: 1.1em;
+  padding-top: 0.8em;
 }
-
 #sushi {
-  padding-bottom: 1.1em;
+  padding-bottom: 0.8em;
+}
+#main-content {
+  width: fit-content;
+}
+#header-container {
+  padding-left: 1.1em;;
+}
+.row {
+  width: 100%;
+  margin: 0px;
 }
 /* END HEADER */
 
 /* FOOTER */
-.panel-footer {
-  margin-top: 30px;
-  padding-top: 35px;
-  padding-bottom: 30px;
-  background-color: #222;
-  border-top: 0;
-}
-.panel-footer div.row {
-  margin-bottom: 35px;
-}
-#hours, #address {
-  line-height: 2;
-}
-#hours > span, #address > span {
-  font-size: 1.3em;
-}
-#address p {
-  color: #557c3e;
-  font-size: .8em;
-  line-height: 1.8;
-}
-#testimonials {
-  font-style: italic;
-}
-#testimonials p:nth-child(2) {
-  margin-top: 25px;
+#back-to-top {
+  clear: both;
+  font-family: "Helvetica";
 }
 /* END FOOTER */
 
@@ -109,19 +98,20 @@ p {
 /* HOME PAGE */
 #menu-categories-title {
   margin-bottom: 50px;
+  font-weight: bold;
   color: black
 }
 
-#section1-tile, #specials-tile {
+#section1-tile, #section2-tile, #section3-tile {
   width: 100%;
   margin-bottom: 15px;
   position: relative;
   border: 2px solid black;
   overflow: hidden;
-  /*background-color: rgb(224, 246, 138);*/
+  background-color: rgb(205, 235, 240);
 }
 
-#section1-tile section, #specials-tile section {
+#section1-tile section, #section2-tile section, #section3-tile section {
   position: absolute;
   top: 0;
   right: 0;
@@ -129,6 +119,7 @@ p {
   font-size: 1.6em;
   color: black;
 }
+
 /* END HOME PAGE */
 
 /********** Large devices only **********/
@@ -136,7 +127,7 @@ p {
   #collapsable-nav{
     visibility: hidden;
   } 
-  .container {
+  #header-container {
     height: 92px;
   }
 }
@@ -146,7 +137,7 @@ p {
   #collapsable-nav{
     visibility: hidden;
   }
-  .container {
+  #header-container {
     height: 92px;
   }
 }
@@ -156,7 +147,7 @@ p {
   #collapsable-nav{
     visibility: hidden;
   }
-  .container {
+  #header-container {
     height: 92px;
   }
 }
@@ -212,7 +203,7 @@ p {
   /* End Header */
   
   /* Home page */
-  #section1-tile, #specials-tile {
+  #section1-tile, #section2-tile, #section3-tile {
     width: 280px;
     margin: 0 auto 15px;
   }
