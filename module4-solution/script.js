@@ -11,5 +11,4 @@
       helloSpeaker.speak(names[name]);
     }
   }
-  
 })();
